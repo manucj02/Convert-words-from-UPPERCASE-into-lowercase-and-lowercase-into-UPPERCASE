@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script>
+        function toggleCase() {
+            let input = document.getElementById('inputText').value;
+            document.getElementById('result').textContent = input === input.toUpperCase() ? input.toLowerCase() : input.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    <h2>Convert Uppercase and lowercase</h2>
+    <input type="text" id="inputText" >
+    <button onclick="toggleCase()">Convert</button>
+    <p id="result"></p>
+</body>
+</html>
